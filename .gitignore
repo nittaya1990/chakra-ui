@@ -1,16 +1,13 @@
-.changelog/
-
 # website public/ folder (temporary; copied to root for docs:build and vercel compat)
 # public/
 
+dist
 node_modules/
 npm-debug.log
 packages/**/lib
 packages/**/.next
 storybook-static
 packages/**/coverage
-packages/**/dist
-tooling/**/dist
 packages/**/node_modules
 npm-debug.log*
 packages/**/.env
@@ -31,6 +28,9 @@ tsconfig.tsbuildinfo
 draft*
 .yarn
 .vercel
+
+# Turbo
+.turbo
 
 # Logs
 logs
@@ -100,3 +100,9 @@ yarn-error.log
 .yarn-integrity
 
 report.*
+*.backup
+
+.velite
+.vercel
+
+*storybook.log
